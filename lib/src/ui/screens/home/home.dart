@@ -36,7 +36,10 @@ class HomeScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              // TODO: Handle Sqlite
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => SqlScreen()),
+              );
             },
             child: const Text("SQL"),
           ),
