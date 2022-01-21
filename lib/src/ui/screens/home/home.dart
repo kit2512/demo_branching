@@ -53,7 +53,10 @@ class HomeScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              // TODO: handle Firebase authentication
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => AuthenticationScreen()),
+              );
             },
             child: const Text("Firebase Authentication"),
           )

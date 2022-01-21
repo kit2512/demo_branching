@@ -1,10 +1,15 @@
-import 'package:demo_branching/src/repositories/image_repository/image_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:demo_branching/src/repositories/repositories.dart';
 import 'ui/screens/screens.dart';
 
 class App extends StatelessWidget {
-  const App({Key? key}) : super(key: key);
+  App({
+    Key? key,
+    required this.authenticationRepository,
+  }) : super(key: key);
+
+  final AuthenticationRepository authenticationRepository;
 
   @override
   Widget build(BuildContext context) {
@@ -12,6 +17,9 @@ class App extends StatelessWidget {
       providers: [
         RepositoryProvider(
           create: (context) => ImageRepository(),
+        ),
+        RepositoryProvider.value(
+          value: authenticationRepository,
         ),
       ],
       child: MaterialApp(

@@ -1,5 +1,5 @@
-import 'package:demo_branching/src/blocs/capture_image_cubit/capture_image_cubit.dart';
-import 'package:demo_branching/src/repositories/image_repository/image_repository.dart';
+import 'package:demo_branching/src/blocs/blocs.dart';
+import 'package:demo_branching/src/repositories/repositories.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,4 +1,4 @@
-import 'package:demo_branching/src/repositories/location_repository/location_repository.dart';
+import 'package:demo_branching/src/repositories/repositories.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
