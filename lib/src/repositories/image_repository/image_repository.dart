@@ -1,6 +1,8 @@
 import 'dart:io';
 
 import 'package:image_picker/image_picker.dart';
+import 'package:path/path.dart';
+import 'package:path_provider/path_provider.dart';
 
 class ImagePickerException implements Exception {
   final String message;
@@ -61,5 +63,13 @@ class ImageRepository {
     } on Exception catch (e) {
       throw ImagePickerException(e.toString());
     }
+  }
+
+  Future<File> saveImage(File imageFile) async {
+    final appPath = await getApplicationDocumentsDirectory();
+    final File newImage = await imageFile.copy(
+      join(appPath.path, 'image.jpg'),
+    );
+    return newImage;
   }
 }

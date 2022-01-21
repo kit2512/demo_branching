@@ -1,3 +1,4 @@
+import 'package:demo_branching/src/ui/screens/screens.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -13,15 +14,25 @@ class HomeScreen extends StatelessWidget {
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           ElevatedButton(
             onPressed: () {
-              // TODO: handle Image Capture
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CaptureImageScreen(),
+                ),
+              );
             },
             child: const Text("Capture Image"),
           ),
           ElevatedButton(
             onPressed: () {
-              // TODO: Handle Google Maps
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => GalleryImageScreen(),
+                ),
+              );
             },
-            child: const Text("Capture Image"),
+            child: const Text("Gallery Image"),
           ),
           ElevatedButton(
             onPressed: () {

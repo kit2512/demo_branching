@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "352181007736",
+    "project_id": "bhsoft-demo-login",
+    "storage_bucket": "bhsoft-demo-login.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352181007736:android:fc32a6ea259772d07cc48d",
+        "android_client_info": {
+          "package_name": "com.example.demo_branching"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352181007736-qm2rg90i7gigmu058akc0m3j87ei9iv6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.demo_branching",
+            "certificate_hash": "bca380cf0564c10635f20b1c1955c13bcd79c172"
+          }
+        },
+        {
+          "client_id": "352181007736-q3q4m6m7eb9obo17tepj4466qf62n1d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDML8kbIDe9fWYTm3lYR97c76dzumpW84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352181007736-q3q4m6m7eb9obo17tepj4466qf62n1d1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
