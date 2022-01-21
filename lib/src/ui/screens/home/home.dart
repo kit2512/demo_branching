@@ -36,15 +36,20 @@ class HomeScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              // TODO: Handle Gallery Image
-            },
-            child: const Text("Gallery Image"),
-          ),
-          ElevatedButton(
-            onPressed: () {
               // TODO: Handle Sqlite
             },
             child: const Text("SQL"),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => GoogleMapScreen(),
+                ),
+              );
+            },
+            child: const Text("Maps"),
           ),
           ElevatedButton(
             onPressed: () {
